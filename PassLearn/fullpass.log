@@ -50,6 +50,7 @@ DomPrinterWrapperPass
 DomViewerWrapperPass
 DominanceFrontierWrapperPass
 DominatorTreeWrapperPass
+DominatorTreeWrapperPassPass
 EarlyCSELegacyPass
 EarlyCSEMemSSALegacyPass
 EliminateAvailableExternallyLegacyPass
@@ -165,6 +166,8 @@ PostDomViewerWrapperPass
 PostDominatorTreeWrapperPass
 PostOrderFunctionAttrsLegacyPass
 PredicateInfoPrinterLegacyPass
+PrintFunctionPassWrapperPass
+PrintModulePassWrapperPass
 ProfileSummaryInfoWrapperPass
 PromoteLegacyPass
 ReassociateLegacyPass
@@ -181,6 +184,7 @@ SCCPLegacyPass
 SCEVAAWrapperPass
 SLPVectorizer
 SROALegacyPass
+SafepointIRVerifierPass
 ScalarEvolutionWrapperPass
 ScalarizeMaskedMemIntrinLegacyPass
 ScalarizerLegacyPass
@@ -211,4 +215,5 @@ UniformityInfoWrapperPass
 UnifyFunctionExitNodesLegacyPass
 UnifyLoopExitsLegacyPass
 VectorCombineLegacyPass
+VerifierLegacyPassPass
 WarnMissedTransformationsLegacy
