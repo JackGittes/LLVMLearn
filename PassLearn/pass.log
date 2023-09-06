@@ -200,3 +200,8 @@ ScopedNoAliasAAWrapperPass
 LCSSAVerificationPass
 MemorySSAWrapperPass
 MemorySSAPrinterLegacyPass
+DominatorTreeWrapperPassPass
+PrintModulePassWrapperPass
+PrintFunctionPassWrapperPass
+SafepointIRVerifierPass
+VerifierLegacyPassPass
