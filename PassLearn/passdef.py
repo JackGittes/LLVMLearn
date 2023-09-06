@@ -33,7 +33,8 @@ def parse_pass(pass_file: str, passdef: str):
     with open("depcnt.log", "w") as fp:
         sorted_keys = sorted(dep_cnt.keys())
         for idx, k in enumerate(sorted_keys):
-            fp.write(k + ": " + str(dep_cnt[k]) + ('\n' if idx != len(dep_cnt) - 1 else ""))
+            fp.write(k + ": " + str(dep_cnt[k]) +
+                     ('\n' if idx != len(dep_cnt) - 1 else ""))
 
 
 def write_dot():
@@ -52,8 +53,6 @@ def write_dot():
         fp.write("}\n")
 
 
-
 if __name__ == "__main__":
-    parse_pass("/home/zhaomingxin/CodeBase/LLVM-learn/llvm-project/pass.log",
-               "/home/zhaomingxin/CodeBase/LLVM-learn/llvm-project/depmiddle.log")
+    parse_pass("./pass.log", "./depmiddle.log")
     write_dot()
